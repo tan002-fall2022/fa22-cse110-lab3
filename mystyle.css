@@ -1,8 +1,96 @@
-body {
-    background-color: lightblue;
+/*
+    This external CSS sheet will follow the following short-hand styles:
+    margin: <top> <right> <bottom> <left>
+    padding: <top> <right> <bottom> <left>
+    border: <top> <right> <bottom> <left>
+*/
+
+@font-face {
+    font-family: 'Silkscreen-Regular';
+    src: url(fonts/Silkscreen-Regular.ttf);
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+@font-face {
+    font-family: 'Silkscreen-Bold';
+    src: url(fonts/Silkscreen-Bold.ttf);
 }
+
+body {
+    background: #FFC659;
+}
+
+#page-header {
+    color: #00bfff;
+    font-family: "Silkscreen-Regular", sans-serif;
+    text-shadow: 2px 2px #ff0000cf;
+    position: relative;
+}
+
+#page-header img {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 100px;
+    height: auto;
+    max-width: 10%;
+}
+
+/* Heading style for the heading 1s across the document */
+#heading1 {
+    /* For the border */
+    margin: 10px 0px 10px 0px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    background: white;
+    border: 0% 85% 0% 85%;
+    padding: 10px;
+
+    /* For the text */
+    color: #00bfff; /* This color is very poppy */
+    font-family: "Silkscreen-Regular", sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+}
+
+#section-standard {
+    /* For the border */
+    border-left-style: solid;
+    border-color: cornflowerblue;
+    border-width: thick;
+    background: whitesmoke;
+    padding: 10px 0px 10px 5px;
+
+    /* For the texts and other contents */
+    font-size: large;
+    color: 	rgb(105,105,105);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation {
+    font-size: x-large;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: "Silkscreen-Regular", sans-serif;
+    text-shadow: 2px 2px #ff0000;
+}
+
+#leader {
+    color: rgba(214, 50, 50, 0.756);
+}
+
+#designer {
+    color: rgb(255, 242, 0);
+}
+
+#planner {
+    color:rgba(0, 72, 252, 0.756);
+}
+
+
+
+
+
