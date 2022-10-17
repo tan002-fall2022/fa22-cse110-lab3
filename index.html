@@ -10,10 +10,10 @@
     <main>
         <!-- What we are going to do today -->
         <div id="page-header">
-            <h1><strong> Project #1's <span>Brainstorming</span> </strong></h1>
-            <h2><strong> Date: 10/09/2022 </strong></h2>
-            <h3><b> Author of meeting notes: <i> Tung Nguyen </i> </b></h3>
-            <img src="ghost.png" class="ghost" alt="group logo goes here">  
+            <h1><strong> Project #1's Brainstorming </strong></h1>
+            <h2><strong> Date: <b> 10/09/2022 </b></strong></h2>
+            <h3><strong> Author of meeting notes: <b>Tung Nguyen<b> </strong></h3>
+            <img src="ghost.png" alt="Just a ghost picture">  
     </main>
 
     <!-- Navigation of meeting notes-->
@@ -31,13 +31,13 @@
             </nav>
         </div>
     </section>
-    
+    <hr>
+
     <!-- Attendance List -->
     <section id="Attendance_List">
-        <h1 id="heading1"><strong> Attendance list </strong></h1>
-    
+        <h1><span id="super-em"> Attendance list </span></h1>
+        
         <div id="section-standard">
-            <span class=""></span>
             <input type="checkbox" id="Allison_Turner" name="Allison_Turner" value="Allison_Turner">
             <label for="Allison_Turner"> Allison Turner</label><br>
 
@@ -51,7 +51,7 @@
             <label for="Hieu_Pham"> Hieu Pham</label><br>
 
             <input type="checkbox" id="Korey_Ken" name="Korey_Ken" value="Korey_Ken">
-            <label for="Korey_Ken"> Korey Ken</label><br>
+            <label for="Korey_Ken"> Yousuf Gharib</label><br>
 
             <input type="checkbox" id="Rachel_Lin" name="Rachel_Lin" value="Rachel_Lin">
             <label for="Rachel_Lin"> Rachel Lin</label><br>
@@ -67,12 +67,16 @@
 
             <input type="checkbox" id="Tung_Nguyen" name="Tung_Nguyen" value="Tung_Nguyen">
             <label for="Tung_Nguyen" id="planner"> Tung Nguyen</label><br>    
+
+            <input type="checkbox" id="Nina" name="Nina" value="Nina">
+            <label for="Korey_Ken"> Nina</label><br>
         </div>
     </section>
+    <hr>
 
     <!-- Meeting's Agenda -->
     <section id="Meeting_Agenda">
-        <h1 id="heading1"><strong> Meeting's Agenda </strong></h1>
+        <h1><strong> Meeting's Agenda </strong></h1>
         <div id="section-standard">
             <ul>
                 <li> Deciding between C++ and Java </li>
@@ -81,62 +85,93 @@
             </ul>
         </div>
     </section>
+    <hr>
 
     <!-- Unfinished business from last meeting -->
     <section id="Unfinished_Business">
-        <h1 id="heading1"><strong> Unfinished business from last meeting </strong></h1>
+        <h1><strong> Unfinished 
+            <span id="super-em"> business </span> from last meeting 
+        </strong></h1>
+
         <div id="section-standard">
             <ul>
+
                 <li>
                     <details> 
-                        <summary><strong> Ranking the IDEs that everyone should use</strong></summary>
-                        <ol>
-                            <li> Eclipse </li>
-                            <li> VS Code </li>
-                            <li> IntelliJ </li>
-                            <li> CLion </li>
+                        <summary> Ranking the IDEs that everyone should use </summary>
+                            <ol>
+                            <span class="flex-container">
+                                <li> Eclipse </li>
+                                <li> VS Code </li>
+                                <li> IntelliJ </li>
+                                <li> CLion </li>
+                                <li> Others <span class="hide"> HI THERE!</span></li>
+                            </span>
                         </ol>
                     </details> 
                 </li>
+
                 <li> The name of our group </li>
                 <li> How many meetings we should schedule per week </li>
+
+                <li>
+                    <details>
+                        <summary> Last week's tic tac toe </summary>
+                            <div class="tic-tac-bar">
+                                <div> &#x2717 </div>
+                                <div> &#x2717</div>
+                                <div> &#x2717 </div>  
+                                <div> &#9711 </div>
+                                <div> &#9711 </div>
+                                <div> &#x2717 </div>  
+                                <div><span class="hide"> empty </span></div>
+                                <div> &#9711 </div>
+                                <div> &#9711 </div>  
+                            </div>
+                    </details>
+                </li>
             </ul>
         </div>
     </section>
+    <hr>
 
     <!-- Miscellaneous comments/questions/concerns -->
     <section id="Miscellaneous">
-        <h1 id="heading1"><strong> Miscellaneous comments/questions/concerns </strong></h1>
+        <h1><strong> Miscellaneous comments/ questions/ concerns </strong></h1>
         <div id="section-standard">
             <ul>
-                <li> "Are we gonna do machine learning?" - Korey </li>
+                <li> "Are we gonna do machine learning?" - Korey <span class="hide"> 05312002 </span> </li>
                 <li> "We should throw a party if we get A on this project" - Hieu </li>
                 <li> "Other forms of communication outside of Slack?" - Tung </li>
             </ul>
         </div>
     </section>
+    <hr>
 
     <!-- Pictures of any diagrams/architecture/things that were presented -->
     <section id="Pictures">
-        <h1 id="heading1"><strong> Meeting's Whiteboard </strong></h1><br>
-        <img src="whiteboard.jpg" alt="The whiteboard of the meeting">
+        <h1><strong> Meeting's Whiteboard </strong></h1><br>
+        <img id="whiteboard" src="whiteboard.jpg" alt="The whiteboard of the meeting">
     </section>
+    <hr>
 
     <!-- Video recording of the meeting-->
     <section id="Video">
-        <h1 id="heading1"><strong> Video record of meeting </strong></h1><br>
-        <video width="1280" height="720" controls>
+        <h1><strong> Video record of meeting </strong></h1><br>
+        <video id="video" width="1280" height="720" controls>
             <source src="meeting_video.mp4" type="video/mp4">
         </video>
     </section>
+    <hr>
 
     <!-- Audio recording of the meeting -->
     <section id="Audio">
-        <h1 id="heading1"><strong> Audio record of meeting </strong></h1><br>
+        <h1><strong> Audio record of meeting </strong></h1><br>
         <audio controls>
             <source src="meeting_audio.mp3" type="audio/mp3">
           </audio>
     </section>
+    <hr>
 
     <!-- Unrelated Form -->
     <section id="Form">
@@ -157,9 +192,9 @@
                 <p> By being the designated note taker for this meeting, 
                     you promise that you fully took down all that are important, 
                     and the details are as accurate as possible. Select
-                    <em> I AGREE </em> to verify this. </p>
+                    <span class="important"> I AGREE </span> to verify this. </p>
                 <select name="choice" id="choice">
-                    <option value="iAgree">I Agree</option>
+                    <option value="iAgree">I AGREE</option>
                     <option value="iDontAgree">I Do Not Agree</option>
                 </select><br>
                 <label for="concerns"> Any other concerns we should know? </label><br>
@@ -169,12 +204,16 @@
             </fieldset>
         </form>
     </section>
+    <hr>
+
     <footer>
         <br>
         <label for="lastUpdated">This meeting is last updated on: </label>
         <input type="date" id="lastUpdated" name="last-Updated"
            value="2022-10-07"
            min="2022-01-01" max="2023-12-31">
-      </footer>
+        <img src="G38-logo.png" class="bottom-right" alt="Group Logo">
+    </footer>
+    <hr>
   </body>
 </html> 

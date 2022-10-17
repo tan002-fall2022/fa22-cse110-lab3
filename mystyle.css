@@ -15,14 +15,46 @@
     src: url(fonts/Silkscreen-Bold.ttf);
 }
 
+* body { 
+    font-family:"Silkscreen-Regular", sans-serif;
+}
+
 body {
-    background: #FFC659;
+    background: hsl(51, 100%, 89%);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: white;
+    }
+}
+
+div p {
+    font-size: 1.2em;
+}
+
+div > ul, label {
+    font-size: 1.2em;
+}
+
+section + hr {
+    border-top: 1px;
+    border: dashed;
+    color: cornflowerblue;
+}
+
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b {
+    background:#ff000042;
+}
+
+input ~ label {
+    text-decoration: line-through;
 }
 
 #page-header {
     color: #00bfff;
     font-family: "Silkscreen-Regular", sans-serif;
-    text-shadow: 2px 2px #ff0000cf;
+    text-shadow: 2pt 2pt #ff0000cf;
     position: relative;
 }
 
@@ -30,13 +62,14 @@ body {
     position: absolute;
     top: 0px;
     right: 50px;
-    width: 100px;
+    width: 1in;
     height: auto;
     max-width: 10%;
+    min-width: 5%
 }
 
 /* Heading style for the heading 1s across the document */
-#heading1 {
+section h1 {
     /* For the border */
     margin: 10px 0px 10px 0px;
     border-top-style: solid;
@@ -46,17 +79,19 @@ body {
     border-color: cornflowerblue;
     background: white;
     border: 0% 85% 0% 85%;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
     /* For the text */
     color: #00bfff; /* This color is very poppy */
     font-family: "Silkscreen-Regular", sans-serif;
     text-align: center;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2pt 2pt #ff0000;
 }
 
 #section-standard {
     /* For the border */
+    margin: auto;
     border-left-style: solid;
     border-color: cornflowerblue;
     border-width: thick;
@@ -64,33 +99,120 @@ body {
     padding: 10px 0px 10px 5px;
 
     /* For the texts and other contents */
-    font-size: large;
     color: 	rgb(105,105,105);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #navigation {
-    font-size: x-large;
+    font-size: 1.5em;
     font-weight: 100;
     text-align: center;
     padding: 10px 0px 10px 0px;
-    font-family: "Silkscreen-Regular", sans-serif;
     text-shadow: 2px 2px #ff0000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    top: 0;
+    position: sticky;
 }
 
 #leader {
     color: rgba(214, 50, 50, 0.756);
+    text-decoration: underline dotted red;
 }
 
 #designer {
     color: rgb(255, 242, 0);
+    text-decoration: underline dotted yellow;
 }
 
 #planner {
     color:rgba(0, 72, 252, 0.756);
+    text-decoration: underline dotted blue;
 }
 
+span.hide {
+    display: none;
+}
 
+button:hover {
+    color: blue;
+    font-size: 1.1em;
+}
 
+button:active {
+    color: purple;
+    font-size: 1.1em;
+}
 
+#video, #whiteboard {
+    /* Centering the video and the whiteboard */
+    display: block;
+    margin: auto;
+    position: relative;
 
+    /* Added a dark gray border with rounded corner */
+    border-style: solid;
+    border-color: cornflowerblue;
+    box-shadow: 5px 5px #ff000042;
+}
+
+.important {
+    display: block;
+    color: red;
+    font-style: bold;
+    padding: 3px 3px 3px 3px;
+}
+
+a[href] {
+    background-color: rgb(248, 219, 0);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-container > li {
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    max-width: 20%;
+    text-align: center;
+    border: dotted;
+    border-color: cornflowerblue;
+}
+
+.tic-tac-bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    border: black solid thick;
+    max-width: 50%;
+}
+
+.tic-tac-bar > div {
+    background-color: white;
+    border: black thin solid;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#super-em {
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    border: solid red;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: auto;
+    opacity: 20%;
+}
