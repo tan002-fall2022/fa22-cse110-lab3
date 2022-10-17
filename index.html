@@ -5,6 +5,19 @@
     <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="author" content="Tung Nguyen">
+    <style>
+        /* Sticking the group's logo at the bottom right at the page */
+        .bottom-right {
+            position: fixed; /* It scrolls with the page */
+            bottom: 0;
+            right: 0;
+
+            /* Scaling the picture to be small */
+            width: 300px;
+            height: auto;
+            opacity: 20%; /* Doesn't want it to be intrusive */
+        }
+    </style>
   </head>
   <body>
     <main>
@@ -13,7 +26,8 @@
             <h1><strong> Project #1's Brainstorming </strong></h1>
             <h2><strong> Date: <b> 10/09/2022 </b></strong></h2>
             <h3><strong> Author of meeting notes: <b>Tung Nguyen<b> </strong></h3>
-            <img src="ghost.png" alt="Just a ghost picture">  
+            <img src="ghost.png" alt="Just a ghost picture">
+        </div>  
     </main>
 
     <!-- Navigation of meeting notes-->
@@ -35,7 +49,7 @@
 
     <!-- Attendance List -->
     <section id="Attendance_List">
-        <h1><span id="super-em"> Attendance list </span></h1>
+        <h1><span class="super-em"> Attendance list </span></h1>
         
         <div id="section-standard">
             <input type="checkbox" id="Allison_Turner" name="Allison_Turner" value="Allison_Turner">
@@ -167,9 +181,18 @@
     <!-- Audio recording of the meeting -->
     <section id="Audio">
         <h1><strong> Audio record of meeting </strong></h1><br>
-        <audio controls>
-            <source src="meeting_audio.mp3" type="audio/mp3">
-          </audio>
+        <!-- Centering the audio player -->
+        <div style="margin: 0 auto; display: table">
+            <audio controls>
+                <source src="meeting_audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        
+        <div id="section-standard">
+            <label> Transcript: </label>
+            <p> "All right. Even though not everyone is here yet, I don't want to waste anyone time." </p>
+            <p> ... </p>
+        </div>
     </section>
     <hr>
 
@@ -179,24 +202,27 @@
             <fieldset>
                 <legend><strong> ONLY FOR THE NOTE TAKER </strong></legend>
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                    <input type="text" id="fname" name="fname"><br>
                 <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <p> Who picked you as the note taker? </p>
-                <input list="choosers" name="choosers" id="chooserIn">
-                <datalist id="choosers">
-                    <option value="Korey Ken">
-                    <option value="John G.">
-                    <option value="Tung Nguyen">
-                </datalist>
+                    <input type="text" id="lname" name="lname"><br>
+                <label> Who picked you as the note taker? <label>
+                    <input list="choosers" name="choosers" id="chooserIn">
+                        <datalist id="choosers">
+                            <option value="John">
+                            <option value="Tung">
+                            <option value="Vedant">
+                            <option value="Divyam">
+                        </datalist>
                 <p> By being the designated note taker for this meeting, 
-                    you promise that you fully took down all that are important, 
+                    you promise that you fully took down all those are important, 
                     and the details are as accurate as possible. Select
-                    <span class="important"> I AGREE </span> to verify this. </p>
+                    <span class="super-em"> I AGREE </span> to verify this. </p>
+
                 <select name="choice" id="choice">
                     <option value="iAgree">I AGREE</option>
-                    <option value="iDontAgree">I Do Not Agree</option>
+                    <option value="iDontAgree">I DO NOT AGREE</option>
                 </select><br>
+
                 <label for="concerns"> Any other concerns we should know? </label><br>
                 <textarea id="concerns" name="concerns" rows="5" cols="60">N/A
                 </textarea><br>
@@ -210,7 +236,7 @@
         <br>
         <label for="lastUpdated">This meeting is last updated on: </label>
         <input type="date" id="lastUpdated" name="last-Updated"
-           value="2022-10-07"
+           value="2022-10-15"
            min="2022-01-01" max="2023-12-31">
         <img src="G38-logo.png" class="bottom-right" alt="Group Logo">
     </footer>
